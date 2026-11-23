@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IT English A2+ · Hack or Not?</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#ffffff;--card:#ffffff;--ink:#1c2030;--mut:#5d6479;--acc:#4f46e5;--acc2:#e8e7fd;--ok:#0f8a5f;--bad:#c93b3b;--line:#e1e4ee}
+:root{color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:820px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:1.9rem;margin:.2em 0}
+h2{font-size:1.25rem;margin:0 0 .4em}
+.sub{color:var(--mut);margin:0 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.chip{background:var(--acc2);color:var(--acc);border-radius:99px;padding:4px 12px;font-size:.85rem;font-weight:600}
+.bar{display:flex;height:34px;border-radius:10px;overflow:hidden;margin:14px 0 6px;font-size:.72rem;font-weight:700;color:#fff}
+.bar a{display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0}
+.head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.time{background:var(--acc);color:#fff;border-radius:8px;padding:2px 10px;font-size:.82rem;font-weight:700}
+.goal{color:var(--mut);font-size:.9rem;margin:0 0 8px}
+.words{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;margin:10px 0}
+.w{border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:.92rem}
+.w b{color:var(--acc)}
+.w i{display:block;color:var(--mut);font-size:.82rem}
+.text{background:var(--acc2);border-left:4px solid var(--acc);border-radius:8px;padding:12px 14px;margin:10px 0}
+.text p{margin:.4em 0}
+.mail{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85rem;background:var(--bg);border:1px dashed var(--mut);border-radius:8px;padding:12px;margin:10px 0}
+ol,ul{padding-left:1.2em;margin:.4em 0}
+li{margin:.25em 0}
+details{border:1px solid var(--line);border-radius:10px;padding:6px 12px;margin:8px 0;background:var(--bg)}
+summary{cursor:pointer;font-weight:600;color:var(--acc)}
+.tf button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:2px 12px;margin-left:6px;cursor:pointer;font:inherit}
+.tf button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+.tf button.wrong{background:var(--bad);color:#fff;border-color:var(--bad)}
+.tip{font-size:.88rem;color:var(--mut);border-top:1px solid var(--line);margin-top:10px;padding-top:8px}
+.flag{color:var(--bad);font-weight:700}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+td,th{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.scroll{overflow-x:auto}
+</style>
+</head>
+<body>
+<main>
+<p class="sub">IT ENGLISH · LESSON PLAN</p>
+<h1>🛡️ Hack or Not? Staying Safe Online</h1>
+<p class="sub">A 60-minute interactive lesson on cybersecurity basics for IT learners.</p>
+<div class="chips">
+<span class="chip">Level: A2+</span><span class="chip">60 min</span><span class="chip">Pairs &amp; groups</span><span class="chip">Speaking · Reading · Grammar</span>
+</div>
+
+<div class="card">
+<h2>Lesson aims</h2>
+<ul>
+<li>Learn 10 key security words (phishing, password, malware…).</li>
+<li>Read a short text about a scam email and find red flags.</li>
+<li>Give advice with <b>should / shouldn’t / must / Don’t…</b></li>
+<li>Role-play a call to an IT helpdesk.</li>
+</ul>
+<p class="tip"><b>Materials:</b> screen or printed email, 10 word cards (optional), a timer. Click a stage below to jump to it.</p>
+</div>
+
+<div class="bar" aria-label="Timeline">
+<a href="#s1" style="flex:5;background:#6366f1">5</a>
+<a href="#s2" style="flex:8;background:#0ea5a4">8</a>
+<a href="#sv" style="flex:12;background:#ef4444">12</a>
+<a href="#s3" style="flex:10;background:#f59e0b">10</a>
+<a href="#s4" style="flex:9;background:#ec4899">9</a>
+<a href="#s5" style="flex:7;background:#8b5cf6">7</a>
+<a href="#s6" style="flex:6;background:#16a34a">6</a>
+<a href="#s7" style="flex:3;background:#64748b">3</a>
+</div>
+<p class="sub" style="font-size:.8rem">Warm-up · Vocabulary · Video · Reading · Grammar · Detective · Role-play · Exit ticket</p>
+
+<!-- 1 -->
+<section class="card" id="s1">
+<div class="head"><h2>1. Warm-up: Is your password safe?</h2><span class="time">0–5 min</span></div>
+<p class="goal">Activate topic, get students talking.</p>
+<p>Write these passwords on the board. In pairs: <b>Which one is the safest? Which one is the worst?</b></p>
+<div class="words">
+<div class="w"><b>123456</b></div><div class="w"><b>qwerty</b></div><div class="w"><b>Kyiv2026</b></div><div class="w"><b>b7!Lm_cat_R9x</b></div>
+</div>
+<p>Then ask: <i>Do you use the same password for different sites? Do you use two-factor authentication?</i></p>
+<p class="tip">Useful language: “I think … is the worst because …” · “It’s too short / too easy.”</p>
+</section>
+
+<!-- 2 -->
+<section class="card" id="s2">
+<div class="head"><h2>2. Vocabulary: Security toolbox</h2><span class="time">5–13 min</span></div>
+<p class="goal">Present and practise 10 words. Students first try to guess the meaning, then check.</p>
+<div class="words">
+<div class="w"><b>hacker</b><i>a person who enters a system without permission</i></div>
+<div class="w"><b>phishing</b><i>a fake message that steals your data</i></div>
+<div class="w"><b>malware</b><i>bad software (virus, spyware)</i></div>
+<div class="w"><b>password</b><i>a secret word to log in</i></div>
+<div class="w"><b>two-factor authentication (2FA)</b><i>a second step to log in, e.g. an SMS code</i></div>
+<div class="w"><b>firewall</b><i>a wall that blocks dangerous traffic</i></div>
+<div class="w"><b>update</b><i>a new version that fixes problems</i></div>
+<div class="w"><b>backup</b><i>a safe copy of your files</i></div>
+<div class="w"><b>suspicious</b><i>strange; you don’t trust it</i></div>
+<div class="w"><b>scam</b><i>a trick to get your money</i></div>
+</div>
+<p><b>Activity: Quick gap-fill</b> (individually, then check in pairs)</p>
+<ol>
+<li>I got an email from “my bank” with a strange link. It’s <u>…</u>.</li>
+<li>My laptop is slow and I see pop-ups. Maybe it has <u>…</u>.</li>
+<li>I always make a <u>…</u> of my photos on the cloud.</li>
+<li>To log in, I need my password and a code from my phone. That’s <u>…</u>.</li>
+<li>Please install the latest <u>…</u> for Windows.</li>
+</ol>
+<details><summary>Answers</summary>1 suspicious / phishing · 2 malware · 3 backup · 4 two-factor authentication · 5 update</details>
+<p><b>Exercise B: Match the halves</b> (collocations)</p>
+<div class="scroll"><table>
+<tr><td>1. click on a</td><td>a) data</td></tr>
+<tr><td>2. steal</td><td>b) phishing email</td></tr>
+<tr><td>3. make a</td><td>c) suspicious link</td></tr>
+<tr><td>4. report a</td><td>d) backup</td></tr>
+<tr><td>5. install the</td><td>e) update</td></tr>
+<tr><td>6. enter your</td><td>f) password</td></tr>
+</table></div>
+<details><summary>Answers</summary>1 c · 2 a · 3 d · 4 b · 5 e · 6 f</details>
+<p><b>Exercise C (fast finishers): Odd one out</b></p>
+<ol>
+<li>hacker · malware · virus · backup</li>
+<li>scam · phishing · fraud · update</li>
+<li>firewall · update · antivirus · spyware</li>
+</ol>
+<details><summary>Answers</summary>1 backup (the others are bad) · 2 update (the others are tricks) · 3 spyware (the others protect you)</details>
+<p class="tip">Extra: say the word, students mime it (hacker, firewall). Pronunciation: <b>phishing</b> /ˈfɪʃɪŋ/ — like “fishing”.</p>
+</section>
+
+<!-- video -->
+<section class="card" id="sv">
+<div class="head"><h2>3. Video + tasks: “What is phishing?”</h2><span class="time">13–25 min</span></div>
+<p class="goal">Listening for gist and detail with a free 3-minute video from New Zealand’s National Cyber Security Centre (Own Your Online). Preview it before class.</p>
+<p><a href="https://www.ownyouronline.govt.nz/resources/for-individuals/what-is-phishing/" target="_blank" rel="noopener" style="display:inline-block;background:var(--acc);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:8px 16px">▶ Open the video</a></p>
+<p class="tip" style="word-break:break-all">Link: https://www.ownyouronline.govt.nz/resources/for-individuals/what-is-phishing/ (copy it into your browser if the button doesn’t open)</p>
+<p class="tip">This page can’t play videos inside it, so open the link in a new tab or share your screen. The video page also has a written transcript.</p>
+
+<h3 style="font-size:1rem;margin:14px 0 4px">Before watching (2 min)</h3>
+<p>Look at the title. <b>Predict:</b> What will the video say about phishing? Tick the ideas you expect:</p>
+<ul style="list-style:none;padding-left:0">
+<li><label><input type="checkbox"> how a scam email works</label></li>
+<li><label><input type="checkbox"> how to recognise a fake email</label></li>
+<li><label><input type="checkbox"> how to report it</label></li>
+<li><label><input type="checkbox"> how to check a link</label></li>
+</ul>
+
+<h3 style="font-size:1rem;margin:14px 0 4px">While watching (4 min): watch once for gist, once for detail</h3>
+<p><b>Task 1: Complete the sentences.</b> Word bank: <i>trust · urgent · link · @ · report</i></p>
+<ol>
+<li>Scammers pretend to be someone you <u>…</u>, like a bank or a courier.</li>
+<li>Scammers want you to click a <u>…</u> or open an attachment.</li>
+<li>Phishing messages often ask you to do something <u>…</u>.</li>
+<li>Check the part after the <u>…</u> sign in the sender’s address.</li>
+<li>If something looks strange, <u>…</u> it.</li>
+</ol>
+<details><summary>Answers</summary>1 trust · 2 link · 3 urgent · 4 @ · 5 report</details>
+<p><b>Task 2: Put the steps in order</b> (how to check a message, as in the video)</p>
+<ol type="a">
+<li>Hover over the link to see the full web address.</li>
+<li>If it still looks strange, contact the company directly.</li>
+<li>Check who sent the email (look after the @).</li>
+<li>Ask: Is the message urgent? Is it about something in my life right now?</li>
+</ol>
+<details><summary>Suggested order</summary>d → c → a → b. Then report the message if it looks like a scam.</details>
+
+<h3 style="font-size:1rem;margin:14px 0 4px">After watching (6 min)</h3>
+<ul>
+<li>Which tip is the most useful for you? Why?</li>
+<li>Compare the video with Olena’s story (next stage): what is the same?</li>
+<li>In pairs, explain phishing to a friend who isn’t good with computers: “Phishing is when …”</li>
+</ul>
+<p class="tip"><b>Teacher’s tip:</b> if the video doesn’t load, read the backup script below aloud twice (slowly) and do the same tasks.</p>
+<details><summary>Backup script (read aloud)</summary><p>Scammers send messages that look like they are from your bank, a courier or your boss. They want you to click a link or open a file. First, ask: is the message urgent? Then check the sender’s address. The part after the @ sign must match the real company. Hover over the link and read the full web address. If something looks strange, don’t click. Contact the company directly and report the message.</p></details>
+</section>
+
+<!-- 3 -->
+<section class="card" id="s3">
+<div class="head"><h2>4. Reading: “The email from Netflix”</h2><span class="time">25–35 min</span></div>
+<p class="goal">Gist reading → detail → discussion.</p>
+<p><b>Pre-reading (2 min):</b> Look at the title. Why can an email from Netflix be dangerous?</p>
+<div class="text">
+<p>Olena is a junior QA engineer. Last Friday, she got an email: <i>“Your Netflix account is blocked. Click the link and enter your card number in 24 hours.”</i></p>
+<p>She was tired, so she almost clicked. But then she looked at the sender: <i>support@netfIix-help.com</i>. The word “Netflix” had a capital “I” instead of the letter “l”. Also, the email said “Dear customer”, not her name.</p>
+<p>Olena didn’t click the link. She sent the email to the security team and deleted it. Her colleague Max wasn’t so lucky. He clicked a similar link last month, and hackers stole his work password. The company had to change all its passwords.</p>
+</div>
+<p><b>Task A (gist, 2 min):</b> What’s the best title? a) A free movie b) A lucky escape c) A new job</p>
+<p><b>Task B: True or False?</b> (click to check)</p>
+<div class="tf" id="tf"></div>
+<p><b>Task C (discussion, 3 min):</b> Have you ever got a suspicious message? What did you do?</p>
+<details><summary>Answers</summary>A: b · 1 T · 2 F (she saw the fake sender) · 3 T · 4 F (she sent it to security) · 5 T</details>
+<p><b>Task D: Find a word in the text that means:</b></p>
+<ol>
+<li>the person who sends an email</li>
+<li>nearly</li>
+<li>took something illegally</li>
+<li>almost the same</li>
+</ol>
+<details><summary>Answers</summary>1 sender · 2 almost · 3 stole · 4 similar</details>
+</section>
+
+<!-- 4 -->
+<section class="card" id="s4">
+<div class="head"><h2>5. Grammar: Giving safety advice</h2><span class="time">35–44 min</span></div>
+<p class="goal">Use should / shouldn’t / must / imperatives naturally.</p>
+<div class="scroll"><table>
+<tr><th>Structure</th><th>Meaning</th><th>Example</th></tr>
+<tr><td>You <b>should</b> + verb</td><td>good advice</td><td>You should use 2FA.</td></tr>
+<tr><td>You <b>shouldn’t</b> + verb</td><td>bad idea</td><td>You shouldn’t share your password.</td></tr>
+<tr><td>You <b>must</b> + verb</td><td>strong rule</td><td>You must update your system.</td></tr>
+<tr><td><b>Don’t</b> + verb</td><td>direct warning</td><td>Don’t click unknown links!</td></tr>
+</table></div>
+<p><b>Practice 1: Choose the correct word</b></p>
+<ol>
+<li>You (should / shouldn’t) use the same password everywhere.</li>
+<li>Employees (must / mustn’t) report phishing emails.</li>
+<li>(Do / Don’t) open files from strangers.</li>
+<li>You (should / shouldn’t) make a backup every week.</li>
+</ol>
+<p><b>Practice 2: Make it yours.</b> Write 3 pieces of advice for your grandma who just bought a smartphone. Compare with a partner.</p>
+<details><summary>Answers</summary>1 shouldn’t · 2 must · 3 Don’t · 4 should</details>
+<p><b>Practice 3: Find and correct the mistake</b></p>
+<ol>
+<li>You should to use two-factor authentication.</li>
+<li>Don’t to click unknown links.</li>
+<li>You mustn’t sharing your password.</li>
+<li>She shoulds make a backup.</li>
+</ol>
+<details><summary>Answers</summary>1 You should use … · 2 Don’t click … · 3 You mustn’t share … · 4 She should make …</details>
+</section>
+
+<!-- 5 -->
+<section class="card" id="s5">
+<div class="head"><h2>6. Game: Phishing detective 🔍</h2><span class="time">44–51 min</span></div>
+<p class="goal">Apply vocabulary in a fun, collaborative task. Teams of 2–3, 4 minutes to find as many red flags as possible.</p>
+<div class="mail">
+From: <span class="flag">security@paypa1-center.net</span><br>
+To: <span class="flag">Dear user</span><br>
+Subject: <span class="flag">URGENT!!! Your account will be deleted</span><br><br>
+Hello,<br>
+We <span class="flag">noticed a problem</span> with you account. <span class="flag">Click here now</span>: <span class="flag">http://bit.ly/x9f-secure</span><br>
+Send us your <span class="flag">password and card number</span> <span class="flag">in 2 hours</span> or we will close it.<br>
+Open the <span class="flag">attached file: invoice.exe</span><br><br>
+Best regards,<br>Support Team
+</div>
+<p><b>Teams report:</b> “I think this is suspicious because …” — the team with most correct flags wins.</p>
+<details><summary>Red flags (8+)</summary>
+<ul>
+<li>Fake domain (paypa1 with the number 1)</li>
+<li>“Dear user”, no name</li>
+<li>Urgent tone and threat</li>
+<li>Spelling mistake (“with you account”)</li>
+<li>Short, unknown link</li>
+<li>Asks for password and card number</li>
+<li>Very short deadline</li>
+<li>Dangerous attachment (.exe)</li>
+</ul></details>
+</section>
+
+<!-- 6 -->
+<section class="card" id="s6">
+<div class="head"><h2>7. Role-play: IT helpdesk call 📞</h2><span class="time">51–57 min</span></div>
+<p class="goal">Free speaking practice with a real-life workplace situation. Swap roles after 4 minutes.</p>
+<div class="w" style="margin-bottom:8px"><b>Student A: Employee.</b> You clicked a suspicious link 10 minutes ago. Your screen shows strange pop-ups. You’re worried.</div>
+<div class="w"><b>Student B: Helpdesk.</b> Ask questions. Give advice.</div>
+<p><b>Useful language</b></p>
+<ul>
+<li><i>Helpdesk:</i> What happened? · When did you click the link? · Did you enter your password? · Please don’t turn off the computer. · You should change your password now.</li>
+<li><i>Employee:</i> I clicked a link in an email. · I think it’s malware. · What should I do? · Can you help me, please?</li>
+</ul>
+<p class="tip">Monitor, note 3–4 good sentences and 3 common mistakes for feedback at the end.</p>
+</section>
+
+<!-- 7 -->
+<section class="card" id="s7">
+<div class="head"><h2>8. Wrap-up: Exit ticket</h2><span class="time">57–60 min</span></div>
+<p>Each student completes <b>one</b> sentence aloud or in the chat:</p>
+<ul>
+<li>Today I learned the word …</li>
+<li>From now on, I will …  /  I shouldn’t …</li>
+</ul>
+<p>Praise 2–3 good answers. Give homework.</p>
+</section>
+
+<div class="card">
+<h2>🏠 Homework</h2>
+<ol>
+<li>Write 5 rules for a safe password (should / shouldn’t / must).</li>
+<li>Find one real phishing example online and write 3 red flags in English.</li>
+<li><i>Bonus:</i> a short voice message (30 sec): “How do I protect my phone?”</li>
+</ol>
+<p class="tip"><b>Teacher’s notes:</b> If time is short, shorten stage 6 to one round. For stronger groups, add a discussion: “Is a password manager a good idea?” For weaker groups, give the word list with translations during the reading.</p>
+</div>
+<div class="card">
+<h2>⭐ Bonus bank: extra exercises</h2>
+<p class="goal">For fast finishers, a second lesson, or homework.</p>
+<p><b>Exercise 1: Phish or Safe?</b> Click to check.</p>
+<div class="tf" id="pq"></div>
+<p><b>Exercise 2: Unscramble the sentences</b></p>
+<ol>
+<li>share / should / never / you / your / password</li>
+<li>click / links / don’t / strange</li>
+<li>report / must / you / emails / phishing</li>
+</ol>
+<details><summary>Answers</summary>1 You should never share your password. · 2 Don’t click strange links. · 3 You must report phishing emails.</details>
+<p><b>Exercise 3: Write it.</b> You get this message: “Your bank account is blocked. Send your PIN now.” Write a short reply to your friend (3–4 sentences) and explain why it is a scam. Use <i>should</i>, <i>don’t</i> and two words from the lesson.</p>
+</div>
+</main>
+
+<script>
+(function(){
+var items=[
+["Olena is a QA engineer.",true],
+["She clicked the link immediately.",false],
+["The sender’s address was fake.",true],
+["She deleted the email and told nobody.",false],
+["Max’s work password was stolen.",true]
+];
+var box=document.getElementById('tf');
+items.forEach(function(it,i){
+var p=document.createElement('p');
+p.textContent=(i+1)+'. '+it[0];
+['True','False'].forEach(function(label){
+var b=document.createElement('button');
+b.type='button';b.textContent=label;
+b.onclick=function(){
+var ok=(label==='True')===it[1];
+b.className=ok?'right':'wrong';
+};
+p.appendChild(b);
+});
+box.appendChild(p);
+});
+})();
+</script>
+<script>
+(function(){
+var q=[
+["“URGENT!!! Your account will close in 1 hour”",true],
+["“Your team meeting is tomorrow at 10:00”",false],
+["“You won an iPhone! Click here to get it”",true],
+["“Dear customer, send us your card number to keep your account”",true],
+["“Sprint planning notes: please read before Monday”",false],
+["“Free Wi-Fi: just send us your bank login”",true]
+];
+var box=document.getElementById('pq');
+q.forEach(function(it,i){
+var p=document.createElement('p');
+p.textContent=(i+1)+'. '+it[0];
+['Phish','Safe'].forEach(function(label){
+var b=document.createElement('button');
+b.type='button';b.textContent=label;
+b.onclick=function(){b.className=((label==='Phish')===it[1])?'right':'wrong';};
+p.appendChild(b);
+});
+box.appendChild(p);
+});
+})();
+</script>
+</body>
+</html>
